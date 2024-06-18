@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+      .header {
+        background-color: #e6f7fc;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 2px solid #6bb7d8;
+        }
+
+      .header h1 {
+        margin: 0;
+        color: #333;
+        font-size: 2.5em;
+        }
+
+      .projects {
+        background-color: #c6e7f1;
+        text-align: center;
+        padding: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-bottom: 2px solid #6bb7d8;
+        }
+
+        .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h2 {
+        margin-top: 0;
+        color: #333;
+        font-size: 1.5em;
+        }
+
+        .project-card p {
+        color: #666;
+        line-height: 1.5;
+        }
+
+        .project-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #6bb7d8;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+        }
+
+        .project-card a:hover {
+        background-color: #5aa3be;
+        }
+        .contact {
+        background-color: #e6f7fc;
+        padding: 50px 20px;
+        text-align: center;
+        border-top: 2px solid #6bb7d8;
+        }
+
+        .contact h2 {
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 20px;
+        }
+
+        .contact p {
+        color: #666;
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="elm-app-is-loaded-here"></div>
+    
+    <script src="elm.js"></script>
+    <script>
+      var app = Elm.HomePage.init({
+        node: document.getElementById("elm-app-is-loaded-here")
+      });      
+    </script>
+  </body>
+</html>
